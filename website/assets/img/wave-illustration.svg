@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Waveform illustration">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="400" rx="24" fill="#0b1220"/>
+  <g filter="url(#glow)">
+    <path d="M0,220 C50,200 100,240 150,210 C200,180 250,260 300,220 C350,180 400,250 450,210 C500,170 550,250 600,220 C650,190 700,240 750,210 C775,195 800,210 800,210" stroke="url(#grad)" stroke-width="6" fill="none"/>
+    <path d="M0,260 C60,240 120,280 180,250 C240,220 300,300 360,260 C420,220 480,290 540,250 C600,210 660,290 720,260 C760,240 800,260 800,260" stroke="url(#grad)" stroke-width="4" opacity="0.6" fill="none"/>
+  </g>
+  <g>
+    <rect x="40" y="320" width="720" height="6" rx="3" fill="#1f2937"/>
+    <rect x="40" y="320" width="240" height="6" rx="3" fill="url(#grad)"/>
+  </g>
+</svg>

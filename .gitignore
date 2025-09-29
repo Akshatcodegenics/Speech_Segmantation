@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Outputs
+*_out/
+output*/
+segments/
+
+# Env
+.env
+.python-version
+
+# Node (not used now, but safe)
+node_modules/

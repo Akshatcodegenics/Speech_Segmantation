@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speech Segmentation Prototype</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="animated-bg">
+  <!-- Watermark layer -->
+  <div class="watermark" aria-hidden="true"></div>
+  <!-- Floating decorative blobs -->
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+
+  <header class="site-header hero">
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <h1>Speech Segmentation</h1>
+        <p class="subtitle">Energy‑based voice activity detection — working prototype</p>
+        <div class="status"><span class="dot"></span> Prototype Ready</div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/img/wave-illustration.svg" alt="Waveform illustration" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card demo">
+      <h2>Try it</h2>
+      <p>Load the standardized audio (audio.wav) and the detected timestamps (segments.json) to visualize and play speech segments. All processing is local.</p>
+
+      <div class="uploader dropzone" id="dropzone">
+        <div class="input-group">
+          <label for="audioInput">Audio file</label>
+          <input id="audioInput" type="file" accept="audio/*" />
+        </div>
+        <div class="input-group">
+          <label for="jsonInput">Segments JSON</label>
+          <input id="jsonInput" type="file" accept="application/json" />
+        </div>
+        <div class="hint">Or drag & drop files here</div>
+      </div>
+
+      <div class="player">
+        <audio id="audio" controls preload="metadata"></audio>
+      </div>
+
+      <div class="waveform">
+        <canvas id="waveCanvas" width="1000" height="220" aria-label="Waveform visualization with segments"></canvas>
+      </div>
+
+      <div class="segments">
+        <h3>Detected Segments</h3>
+        <div id="segmentsList" class="segments-list empty">Load audio and segments.json to see results.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Speech Segmentation Prototype</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

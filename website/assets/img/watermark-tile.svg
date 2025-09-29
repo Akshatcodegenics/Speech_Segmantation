@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280" height="140" viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Watermark tile pattern">
+  <defs>
+    <linearGradient id="wmGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="140" fill="none"/>
+
+  <!-- Diagonal small wave glyphs -->
+  <g stroke="url(#wmGrad)" stroke-width="2" opacity="0.55" fill="none">
+    <path d="M10,90 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+    <path d="M-10,60 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+    <path d="M60,120 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+    <path d="M130,90 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+    <path d="M200,60 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+    <path d="M100,30 c8,-8 16,8 24,0 c8,-8 16,8 24,0 c8,-8 16,8 24,0"/>
+  </g>
+</svg>
